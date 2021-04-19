@@ -1,0 +1,14 @@
+type: Wall
+localizedName: Huge Metal Wall
+description: Protects structures from enemy projectiles. Reinforced scrap walls.
+
+requirements: [
+	scrap/54
+	titanium/20
+]
+
+size: 3
+health: 8640
+
+category: defense
+buildVisibility: sandboxOnly

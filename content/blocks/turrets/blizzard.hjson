@@ -13,15 +13,15 @@ requirements: [
 ammoTypes: {
 	cryofluid: {
 		type: ArtilleryBulletType
-		damage: 115
+		damage: 175
 		speed: 5
 		lifetime: 80
 		width: 32
 		height: 32
 		collidesAir: true
 		ammoMultiplier: 3
-		splashDamageRadius: 90
-		splashDamage: 95
+		splashDamageRadius: 145
+		splashDamage: 160
 		frontColor: ecececff
 		backColor: cccedbff
 		status: freezing

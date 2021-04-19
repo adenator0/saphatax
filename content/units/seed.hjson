@@ -25,6 +25,8 @@ weapons: [
 			instantDisappear: true
 			damage: 25
 			radius: 35
+			splashDamage: 25
+			splashDamageRadius: 35
 			knockback: 4
 			status: sapped
 			despawnEffect: {

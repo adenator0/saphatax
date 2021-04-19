@@ -11,7 +11,7 @@ requirements: [
 powerUse: 3.5
 shootType: {
 	type: BasicBulletType
-	damage: 200
+	damage: 18
 	speed: 7
 	width: 10
 	height: 18
@@ -29,6 +29,8 @@ reloadTime: 50
 range: 210
 recoilAmount: 3
 inaccuracy: 2
+shots: 3
+burstSpacing: 15
 shootSound: railgun
 targetGround: true
 targetAir: true

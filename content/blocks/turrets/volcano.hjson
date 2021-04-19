@@ -13,15 +13,15 @@ requirements: [
 ammoTypes: {
 	slag: {
 		type: ArtilleryBulletType
-		damage: 95
+		damage: 155
 		speed: 5
 		lifetime: 80
 		width: 32
 		height: 32
 		collidesAir: true
 		ammoMultiplier: 3
-		splashDamageRadius: 90
-		splashDamage: 95
+		splashDamageRadius: 115
+		splashDamage: 135
 		frontColor: e7885cff
 		backColor: bc5452ff
 		makeFire: true

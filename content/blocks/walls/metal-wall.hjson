@@ -1,0 +1,19 @@
+type: Wall
+localizedName: Metal Wall
+description: Protects structures from enemy projectiles. Reinforced scrap walls.
+
+requirements: [
+	scrap/6
+	titanium/20
+]
+
+health: 960
+
+category: defense
+research: {
+	parent: thorium-wall
+	requirements: [
+		scrap/1000
+		titanium/3500
+	]
+}

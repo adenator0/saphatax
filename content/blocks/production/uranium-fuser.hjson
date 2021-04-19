@@ -1,0 +1,43 @@
+type: GenericSmelter
+localizedName: Uranium Fuser
+description: Fuses thorium, titanium, and surge alloy to create uranium.
+
+requirements: [
+	copper/110
+	lead/100
+	thorium/80
+]
+
+hasItems: true
+itemCapacity: 35
+consumes: {
+	items: {
+		items: [
+			surge-alloy/1
+			titanium/3
+			thorium/8
+		]
+		optional: false
+		booster: false
+	}
+	power: 20
+}
+
+outputItem: uranium/1
+craftTime: 80
+craftEffect: smeltsmoke
+flameColor: cbd97fff
+
+size: 3
+health: 540
+
+category: crafting
+research: {
+	parent: alloy-smelter
+	requirements: [
+		copper/75000
+		lead/68000
+		thorium/60000
+		surge-alloy/7500
+	]
+}

@@ -28,6 +28,8 @@ weapons: [
 			radius: 50
 			width: 10
 			height: 14
+			splashDamage: 45
+			splashDamageRadius: 50
 			frontColor: bf92f9ff
 			backColor: 6d56bfff
 			knockback: 4

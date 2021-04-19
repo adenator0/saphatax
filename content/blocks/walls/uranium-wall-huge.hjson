@@ -7,7 +7,7 @@ requirements: [
 	surge-alloy/18
 ]
 
-size: 2
+size: 3
 health: 5000
 chanceDeflect: 10
 insulated: true

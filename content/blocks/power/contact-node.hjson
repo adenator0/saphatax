@@ -3,8 +3,7 @@ localizedName: Contact Node
 description: Transmits power only to adjacent blocks.
 
 requirements: [
-	copper/1
-	lead/1
+	copper/2
 ]
 
 laserRange: 1
@@ -15,9 +14,8 @@ health: 30
 
 category: power
 research: {
-	parent: power-node
+	parent: combustion-generator
 	requirements: [
 		copper/1000
-		lead/750
 	]
 }

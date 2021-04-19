@@ -1,0 +1,14 @@
+type: Wall
+localizedName: Large Metal Wall
+description: Protects structures from enemy projectiles. Reinforced scrap walls.
+
+requirements: [
+	scrap/24
+	titanium/20
+]
+
+size: 2
+health: 3840
+
+category: defense
+research: metal-wall
