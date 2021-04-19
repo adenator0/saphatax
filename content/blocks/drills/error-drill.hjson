@@ -1,0 +1,41 @@
+type: Drill
+localizedName: Error Drill
+description: A drill way stronger than the airblast drill. Requires extreme amounts of power.
+details: Okay, who removed the rotator texture!?
+
+requirements: [
+	copper/100
+	titanium/75
+	thorium/95
+	silicon/80
+	ohnoium/25
+]
+
+tier: 6
+drillTime: 220
+rotateSpeed: 10
+itemCapacity: 20
+
+updateEffect: {
+	type: ParticleEffect
+	colorFrom: ffa480ff
+	colorTo: 8f8f8fff
+	sprite: error
+}
+drillEffect: mineHuge
+
+hasPower: true
+consumes: {
+	power: 8
+}
+
+size: 5
+health: 1280
+
+category: production
+research: {
+	parent: blast-drill
+	requirements: [
+		
+	]
+}

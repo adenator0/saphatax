@@ -1,0 +1,44 @@
+type: PowerTurret
+localizedName: Impulse
+description: The inverse parallax. Quickly fires large projectiles that push enemies back.
+
+requirements: [
+	graphite/40
+	titanium/85
+	silicon/125
+]
+
+hasPower: true
+powerUse: 6
+shootType: {
+	type: BasicBulletType
+	damage: 25
+	speed: 5
+	lifetime: 48
+	width: 26
+	height: 29
+	knockback: 12
+	frontColor: f58859ff
+	backColor: ec7458ff
+	homingPower: 1
+	homingRange: 240
+}
+
+range: 240
+reloadTime: 25
+targetGround: true
+targetAir: true
+rotateSpeed: 180
+
+size: 3
+health: 2400
+
+category: turret
+research: {
+	parent: parallax
+	requirements: [
+		graphite/1700
+		titanium/2640
+		silicon/3600
+	]
+}

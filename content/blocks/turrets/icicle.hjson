@@ -1,0 +1,74 @@
+type: LiquidTurret
+localizedName: Icicle
+description: Forms icicles from either water or cryofluid, then chucks them at enemy units.
+
+requirements: [
+	copper/125
+	lead/65
+	titanium/45
+]
+
+ammoTypes: {
+	water: {
+		type: BasicBulletType
+		damage: 43
+		speed: 4
+		lifetime: 80
+		width: 8
+		height: 18
+		shrinkY: 0
+		frontColor: 8aa3f4ff
+		backColor: 6974c4ff
+		puddles: 1
+		puddleLiquid: water
+		status: freezing
+	}
+	cryofluid: {
+		type: BasicBulletType
+		damage: 43
+		speed: 5
+		lifetime: 64
+		width: 8
+		height: 18
+		shrinkY: 0
+		frontColor: a1b1d0ff
+		backColor: 8aa3f4ff
+		puddles: 1
+		puddleLiquid: cryofluid
+		status: freezing
+		fragBullets: 4
+		fragBullet: {
+			type: BasicBulletType
+			damage: 43
+			speed: 3
+			lifetime: 20
+			width: 8
+			height: 13
+			shrinkY: 0
+			frontColor: 8aa3f4ff
+			backColor: 6974c4ff
+			puddles: 1
+			puddleLiquid: cryofluid
+			status: freezing
+		}
+	}
+}
+
+extinguish: false
+reloadTime: 60
+range: 300
+rotateSpeed: 5
+maxAmmo: 5
+
+size: 1
+health: 380
+
+category: turret
+research: {
+	parent: scatter
+	requirements: [
+		copper/1200
+		lead/1000
+		titanium/725
+	]
+}

@@ -1,0 +1,86 @@
+type: flying
+localizedName: "[gold]Hunter"
+description: Elite poly. It can now rapidly fire healing lasers at enemy units.
+
+# defaultController: RepairAI
+
+flying: true
+drag: 0.05
+speed: 2.6
+rotateSpeed: 15
+accel: 0.1
+range: 130
+health: 450
+buildSpeed: 0.75
+engineOffset: 6.5
+hitSize: 8
+lowAltitude: true
+
+# ammoType: power
+
+mineTier: 3
+mineSpeed: 4
+
+abilities: [
+	{
+		type: RepairFieldAbility
+		amount: 5
+		reload: 100
+		range: 60
+	}
+]
+
+weapons: [
+	{
+		name: heal-weapon-mount
+		top: false
+		x: 3.5
+		y: -2.5
+		reload: 30
+		recoil: 2
+		shootSound: missile
+		velocityRnd: 0.5
+		inaccuracy: 15
+		bullet: {
+			type: MissileBulletType
+			damage: 18
+			speed: 5
+			homingPower: 0.08
+			weaveMag: 4
+			weaveScale: 4
+			lifetime: 30
+			keepVelocity: false
+			shootEffect: shootHeal
+			smokeEffect: hitLaser
+			hitEffect: hitLaser
+			despawnEffect: hitLaser
+			frontColor: ffffffff
+			hitSound: none
+			healPercent: 8.5
+			collidesTeam: true
+			backColor: 98ffa9ff
+			trailColor: 98ffa9ff
+		}
+	}
+	{
+		x: 0
+		y: 3
+		reload: 5
+		shootSound: lasershoot
+		velocityRnd: 0.5
+		inaccuracy: 15
+		mirror: false
+		bullet: {
+			type: LaserBoltBulletType
+			damage: 7
+			speed: 6
+			lifetime: 21
+			healPercent: 5.5
+			collidesTeam: true
+			frontColor: ffffffff
+			backColor: 98ffa9ff
+		}
+	}
+]
+
+research: search

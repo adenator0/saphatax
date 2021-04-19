@@ -1,0 +1,23 @@
+type: PowerNode
+localizedName: Contact Node
+description: Transmits power only to adjacent blocks.
+
+requirements: [
+	copper/1
+	lead/1
+]
+
+laserRange: 1
+maxNodes: 4
+
+size: 1
+health: 30
+
+category: power
+research: {
+	parent: power-node
+	requirements: [
+		copper/1000
+		lead/750
+	]
+}

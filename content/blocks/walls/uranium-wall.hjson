@@ -1,0 +1,23 @@
+type: Wall
+localizedName: Uranium Wall
+description: Protects structures from enemy projectiles, reflecting most bullets upon impact and absorbing energy attacks.
+
+requirements: [
+	uranium/4
+	surge-alloy/2
+]
+
+health: 920
+chanceDeflect: 10
+insulated: true
+absorbLasers: true
+schematicPriority: 10
+
+category: defense
+research: {
+	parent: surge-wall
+	requirements: [
+		uranium/1000
+		surge-alloy/4500
+	]
+}

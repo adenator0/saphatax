@@ -1,0 +1,11 @@
+localizedName: Hacked
+speedMultiplier: 0
+disarm: true
+buildSpeedMultiplier: 0
+effect: {
+	type: WaveEffect
+	colorFrom: c45f5fff
+	colorTo: c45f5fff
+	sizeTo: 25
+	strokeFrom: 5
+}

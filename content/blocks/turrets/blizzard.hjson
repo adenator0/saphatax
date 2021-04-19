@@ -1,0 +1,59 @@
+type: LiquidTurret
+localizedName: Blizzard
+description: Fires large, freezing shots at enemy units that frag into cryofluid blobs.
+details: Volcano's colder brother.
+
+requirements: [
+	lead/750
+	silicon/645
+	titanium/390
+	metaglass/165
+]
+
+ammoTypes: {
+	cryofluid: {
+		type: ArtilleryBulletType
+		damage: 115
+		speed: 5
+		lifetime: 80
+		width: 32
+		height: 32
+		collidesAir: true
+		ammoMultiplier: 3
+		splashDamageRadius: 90
+		splashDamage: 95
+		frontColor: ecececff
+		backColor: cccedbff
+		status: freezing
+		hitShake: 5
+		fragLifeMin: 0.5
+		fragBullets: 15
+		fragBullet: {
+			type: LiquidBulletType
+			liquid: cryofluid
+			orbSize: 5
+			puddleSize: 12
+		}
+	}
+}
+
+range: 400
+reloadTime: 85
+rotateSpeed: 3
+recoilAmount: 5
+shootShake: 10
+shootSound: bang
+
+size: 5
+health: 2750
+
+category: turret
+research: {
+	parent: frostbite
+	requirements: [
+		lead/8350
+		silicon/7500
+		titanium/8300
+		metaglass/5850
+	]
+}

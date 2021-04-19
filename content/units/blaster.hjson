@@ -1,0 +1,28 @@
+localizedName: Blaster
+speed: 0.6
+flying: false
+health: 200
+hitSize: 9
+weapons: [
+	{
+		name: blaster-shotgun
+		mirror: true
+		top: false
+		shake: 5
+		shootY: 2
+		x: 5
+		y: 0
+		reload: 50
+		recoil: 2
+		shots: 5
+		inaccuracy: 15
+		ejectEffect: casing1
+		shootSound: bang
+		bullet: {
+			type: BasicBulletType
+			damage: 35
+			lifetime: 60
+			shake: 1
+		}
+	}
+]

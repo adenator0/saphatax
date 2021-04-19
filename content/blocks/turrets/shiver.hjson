@@ -1,0 +1,62 @@
+type: ItemTurret
+localizedName: Shiver
+description: Fires slightly large, chilled bullets that appear to shiver.
+details: Icicle's stronger brother.
+
+requirements: [
+	copper/300
+	lead/300
+	titanium/200
+]
+
+ammoTypes: {
+	titanium: {
+		type: BasicBulletType
+		damage: 80
+		speed: 3
+		lifetime: 80
+		width: 15
+		height: 16
+		frontColor: ecececff
+		backColor: cccedbff
+		weaveScale: 0.5
+		weaveMag: 2
+		puddles: 1
+		puddleLiquid: cryofluid
+		status: freezing
+	}
+	silicon: {
+		type: BasicBulletType
+		damage: 60
+		speed: 3
+		lifetime: 80
+		width: 10
+		height: 11
+		frontColor: ecececff
+		backColor: cccedbff
+		weaveScale: 0.5
+		weaveMag: 2
+		homingPower: 0.12
+		puddles: 1
+		puddleLiquid: cryofluid
+		status: freezing
+	}
+}
+
+reloadTime: 20
+shootSound: spray
+recoilAmount: 0.5
+range: 210
+
+size: 2
+health: 1200
+
+category: turret
+research: {
+	parent: icicle
+	requirements: [
+		copper/3200
+		lead/3000
+		titanium/3450
+	]
+}

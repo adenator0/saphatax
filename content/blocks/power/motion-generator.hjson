@@ -1,0 +1,35 @@
+type: BurnerGenerator
+localizedName: Motion Generator
+description: I'm not sure why it doesnt seem to allow for building. Generates power from motion of water inside of it. Requires combustible materials to move the water around.
+details: Steam generator but more useful.
+
+requires: [
+	copper/115
+	silicon/65
+	metaglass/15
+]
+
+hasItems: true
+itemCapacity: 20
+consumes: {
+	liquid: {
+		liquid: water
+		amount: 1
+	}
+}
+
+powerProduction: 3
+randomlyExplode: false
+
+size: 4
+health: 640
+
+category: power
+research: {
+	parent: steam-generator
+	requirements: [
+		copper/1850
+		silicon/1300
+		metaglass/900
+	]
+}

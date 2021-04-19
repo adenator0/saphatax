@@ -1,0 +1,38 @@
+type: ItemTurret
+localizedName: Lead Bolter
+description: Fires bolts of lead at enemies. Early-game heavy damage dealer.
+
+requirements: [
+	copper/95
+	lead/70
+]
+
+ammoTypes: {
+	lead: {
+		type: BasicBulletType
+		damage: 105
+		speed: 4.5
+		width: 7
+		height: 14
+		frontColor: ab99d3ff
+		backColor: 8c7fa9ff
+	}
+}
+
+range: 160
+minRange: 20
+reloadTime: 60
+recoilAmount: 3
+inaccuracy: 2
+
+size: 2
+health: 150
+
+category: turret
+research: {
+	parent: duo
+	requirements: [
+		copper/1650
+		lead/1400
+	]
+}

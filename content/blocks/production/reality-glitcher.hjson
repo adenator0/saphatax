@@ -1,0 +1,85 @@
+type: GenericCrafter
+localizedName: Reality Glitcher
+description: Combines various materials to glitch reality itself and create a physical chunk of an extremely strong item.
+details: Why is this even a good idea?
+
+requirements: [
+	copper/1
+]
+
+hasItems: true
+
+itemCapacity: 25
+consumes: {
+	items: {
+		items: [
+			titanium/1
+			thorium/1
+			blast-compound/1
+			pyratite/1
+			spore-pod/1
+			coal/1
+			uranium/1
+		]
+		booster: false
+		optional: false
+	}
+	liquid: {
+		liquid: slag
+		amount: 1
+	}
+	power: 40
+}
+
+outputItem: ohnoium/1
+
+craftEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: WaveEffect
+			colorFrom: 0000ffff
+			colorTo: 0000ff00
+			sizeFrom: 0
+			sizeTo: 50
+			strokeFrom: 30
+		}
+		{
+			type: WaveEffect
+			colorFrom: 00ff00ff
+			colorTo: 00ff0000
+			sizeFrom: 0
+			sizeTo: 50
+			strokeFrom: 20
+		}
+		{
+			type: WaveEffect
+			colorFrom: ff0000ff
+			colorTo: ff000000
+			sizeFrom: 0
+			sizeTo: 50
+			strokeFrom: 10
+		}
+	]
+}
+updateEffect: {
+	type: WaveEffect
+	colorFrom: 00000000
+	colorTo: ffffffff
+	sizeFrom: 100
+	sizeTo: 0
+	strokeFrom: 10
+	strokeTo: 0
+}
+drawer: drawWeave
+
+size: 3
+health: 850
+
+category: crafting
+research: {
+	parent: alloy-smelter
+	requirements: [
+		copper/1
+	]
+}

@@ -1,0 +1,9 @@
+localizedName: "[red]Ohno[]ium"
+description: An extremely rare item, only for use within the most powerful and unstable buildings. When used in the wrong ways, it can even explode the planet.
+details: Who even thought this was a good idea!?
+
+color: ecececff
+explosiveness: 100
+flammability: 100
+radioactivity: 100
+charge: 100

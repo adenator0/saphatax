@@ -1,0 +1,67 @@
+type: ItemTurret
+localizedName: Disruptor
+description: Fires clusters of ohnoium at enemy units, glitching them on a successful hit.
+
+requirements: [
+	copper/3600
+	lead/1050
+	graphite/900
+	surge-alloy/975
+	silicon/975
+	depleted-ohnoium/300
+]
+
+ammoTypes: {
+	ohnoium: {
+		type: BasicBulletType
+		damage: 200
+		speed: 5
+		lifetime: 40
+		width: 15
+		height: 15
+		spin: 5
+		sprite: saphatax-triangle
+		frontColor: ecececff
+		backColor: ea8878ff
+		status: {
+			name: glitched
+			localizedName: Glitched
+			speedMultiplier: -1
+			disarm: true
+			damage: 5
+			effect: {
+				type: WaveEffect
+				colorFrom: 84f491ff
+				colorTo: 84f491ff
+				sizeTo: 25
+				strokeFrom: 5
+			}
+		}
+	}
+}
+
+reloadTime: 75
+recoilAmount: 5
+rotateSpeed: 7.5
+range: 200
+shots: 5
+inaccuracy: 15
+velocityInaccuracy: 0.25
+shootSound: bang
+
+size: 5
+health: 10000
+
+category: turret
+research: {
+	parent: volcano
+	requirements: [
+		copper/17000
+		lead/9300
+		graphite/8400
+		surge-alloy/9350
+		silicon/9150
+		ohnoium/850
+		depleted-ohnoium/45
+	]
+}

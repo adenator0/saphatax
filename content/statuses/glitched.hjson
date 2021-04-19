@@ -1,0 +1,10 @@
+localizedName: Glitched
+speedMultiplier: -1
+disarm: true
+effect: {
+	type: WaveEffect
+	colorFrom: 84f491ff
+	colorTo: 84f491ff
+	sizeTo: 25
+	strokeFrom: 5
+}

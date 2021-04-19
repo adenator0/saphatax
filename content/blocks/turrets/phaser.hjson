@@ -1,0 +1,47 @@
+type: PowerTurret
+localizedName: Phaser
+description: Fires a long, speedy bolt that pierces enemies and shocks on impact.
+
+requirements: [
+	graphite/40
+	silicon/50
+	phase-fabric/30
+]
+
+powerUse: 3.5
+shootType: {
+	type: BasicBulletType
+	damage: 200
+	speed: 7
+	width: 10
+	height: 18
+	lifetime: 30
+	pierce: true
+	pierceBuilding: true
+	frontColor: f3e979ff
+	backColor: 7457ceff
+	lightning: 5
+	lightningDamage: 25
+	lightningLength: 10
+}
+
+reloadTime: 50
+range: 210
+recoilAmount: 3
+inaccuracy: 2
+shootSound: railgun
+targetGround: true
+targetAir: true
+
+size: 2
+health: 2000
+
+category: turret
+research: {
+	parent: lancer
+	requirements: [
+		graphite/4000
+		silicon/4500
+		phase-fabric/3000
+	]
+}

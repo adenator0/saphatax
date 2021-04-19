@@ -1,0 +1,41 @@
+type: flying
+localizedName: "[gold]Search"
+description: Elite mono. It is given a weapon and the ability to mine titanium.
+
+# defaultController: MinerAI
+
+flying: true
+hitSize: 8
+drag: 0.06
+accel: 0.12
+speed: 2
+health: 120
+engineSize: 1.8
+engineOffset: 5.7
+range: 75
+
+# ammoType: power
+
+mineTier: 3
+mineSpeed: 3
+
+weapons: [
+	{
+		reload: 35
+		x: 2
+		y: 2
+		shootSound: lasershoot
+		bullet: {
+			type: LaserBoltBulletType
+			damage: 14
+			speed: 6
+			lifetime: 40
+			healPercent: 5.5
+			collidesTeam: true
+			frontColor: ffffffff
+			backColor: 98ffa9ff
+		}
+	}
+]
+
+research: mono

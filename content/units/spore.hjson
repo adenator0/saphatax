@@ -1,0 +1,55 @@
+type: flying
+localizedName: Spore
+description: Flies up to enemy units and buildings, dropping sapping bombs on them.
+
+flying: true
+hitSize: 11
+health: 295
+accel: 0.14
+drag: 0.03
+targetAir: false
+faceTarget: false
+circleTarget: true
+armor: 2
+engineOffset: 6.3
+
+weapons: [
+	{
+		minShootVelocity: 0.75
+		x: 3
+		shootY: 0
+		reload: 15
+		shootCone: 180
+		inaccuracy: 25
+		ignoreRotation: true
+		bullet: {
+			type: BombBulletType
+			damage: 45
+			radius: 50
+			width: 10
+			height: 14
+			frontColor: bf92f9ff
+			backColor: 6d56bfff
+			knockback: 4
+			status: sapped
+			despawnEffect: {
+				type: WaveEffect
+				colorFrom: bf92f9ff
+				colorTo: bf92f9ff
+				sizeFrom: 0
+				sizeTo: 50
+				lifetime: 25
+			}
+			hitEffect: {
+				type: WaveEffect
+				colorFrom: bf92f9ff
+				colorTo: bf92f9ff
+				sizeFrom: 0
+				sizeTo: 50
+				lifetime: 25
+			}
+		}
+	}
+]
+
+research: seed

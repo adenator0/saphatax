@@ -1,0 +1,18 @@
+type: Wall
+localizedName: Huge Uranium Wall
+description: Protects structures from enemy projectiles, reflecting most bullets upon impact and absorbing energy attacks.
+
+requirements: [
+	uranium/36
+	surge-alloy/18
+]
+
+size: 2
+health: 5000
+chanceDeflect: 10
+insulated: true
+absorbLasers: true
+schematicPriority: 10
+
+category: defense
+research: uranium-wall-large

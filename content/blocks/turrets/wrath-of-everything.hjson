@@ -1,0 +1,34 @@
+type: LaserTurret
+localizedName: "[red]Wrath of Everything"
+description: A very strong and powerful turret, use at your own risk. May not be able to shoot again after shooting once.
+
+powerUse: 16666
+shootType: {
+	type: ContinuousLaserBulletType
+	damage: 1.7976931348623157e+308
+	length: 8000
+	shake: 20
+	colors: [ea8878ff, ff9c5aff, ffd37fff, 84f491ff, 8aa3f4ff, a387eaff]
+	tscales: [1.0, 0.8, 0.6, 0.5, 0.4, 0.3]
+	strokes: [2.0, 1.6, 1.2, 0.9, 0.7, 0.6]
+	lenscales: [1.0, 1.12, 1.14, 1.15, 1.16, 1.17]
+	width: 128
+	status: {
+		name: wrath-of-everything-status
+		localizedName: "[red]Wrath of Everything"
+		damage: 100000
+	}
+}
+
+reloadTime: 650
+shootDuration: 550
+recoilAmount: 5
+range: 1000
+rotateSpeed: 10
+shootSound: laserblast
+
+size: 16
+health: 1.7976931348623157e+308
+
+category: turret
+buildVisibility: sandboxOnly

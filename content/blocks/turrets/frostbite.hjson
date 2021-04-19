@@ -1,0 +1,72 @@
+type: ItemTurret
+localizedName: Frostbite
+description: All-targeting artillery turret that fires a very large bullet that frags into many icicles.
+
+requirements: [
+	copper/420
+	lead/340
+	silicon/275
+	titanium/285
+	thorium/35
+]
+
+ammoTypes: {
+	titanium: {
+		type: ArtilleryBulletType
+		damage: 105
+		speed: 2.5
+		lifetime: 80
+		width: 25
+		height: 25
+		collidesAir: true
+		ammoMultiplier: 4
+		splashDamageRadius: 80
+		splashDamage: 60
+		frontColor: ecececff
+		backColor: cccedbff
+		status: freezing
+		hitShake: 5
+		hitSound: bang
+		fragLifeMin: 0.3
+		fragBullets: 10
+		fragBullet: {
+			type: ArtilleryBulletType
+			damage: 35
+			speed: 1
+			lifetime: 90
+			width: 16
+			height: 16
+			collidesAir: true
+			collidesTiles: false
+			splashDamageRadius: 65
+			splashDamage: 15
+			backColor: ecececff
+			frontColor: cccedbff
+			status: freezing
+			hitShake: 2.5
+		}
+	}
+}
+
+reloadTime: 100
+range: 200
+rotateSpeed: 2.5
+minRange: 50
+recoilAmount: 5
+shootShake: 5
+shootSound: bang
+
+size: 3
+health: 1700
+
+category: turret
+research: {
+	parent: shiver
+	requirements: [
+		copper/4800
+		lead/7550
+		silicon/4500
+		titanium/6450
+		thorium/4650
+	]
+}

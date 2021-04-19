@@ -1,0 +1,78 @@
+type: GenericCrafter
+localizedName: Ohnoium Depleter
+description: Blasts batches of ohnoium with high amounts of cryofluid to deplete it of its insane power.
+
+requirements: [
+	copper/10000
+	titanium/3000
+	thorium/3000
+	lead/1000
+	graphite/500
+	silicon/1000
+	surge-alloy/500
+]
+
+hasItems: true
+
+itemCapacity: 35
+consumes: {
+	items: {
+		items: [
+			ohnoium/3
+		]
+	}
+	liquid: {
+		liquid: cryofluid
+		amount: 5
+	}
+	power: 80
+}
+
+outputItem: depleted-ohnoium/3
+
+craftEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: ParticleEffect
+			colorFrom: 6ecdecff
+			colorTo: 6ecdecff
+			particles: 15
+			sizeFrom: 5
+			lifetime: 100
+		}
+		{
+			type: WaveEffect
+			colorFrom: ffffffff
+			colorTo: ffffff00
+			sizeFrom: 0
+			sizeTo: 25
+		}
+	]
+}
+updateEffect: {
+	type: ParticleEffect
+	colorFrom: 6ecdecff
+	colorTo: 6ecdecff
+	particles: 3
+	sizeFrom: 2.5
+}
+
+craftTime: 120
+
+size: 5
+health: 1700
+
+category: crafting
+research: {
+	parent: reality-glitcher
+	requirements: [
+		copper/50000
+		titanium/40000
+		thorium/30000
+		lead/15000
+		graphite/25000
+		silicon/10000
+		surge-alloy/10000
+	]
+}

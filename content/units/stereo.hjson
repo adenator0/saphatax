@@ -1,0 +1,28 @@
+type: flying
+localizedName: Stereo
+description: Fires two sound waves at enemies.
+
+flying: true
+speed: 3.2
+accel: 0.08
+drag: 0.05
+health: 170
+commandLimit: 6
+hitSize: 9
+range: 300
+
+weapons: [
+	{
+		x: 4
+		y: 0
+		reload: 15
+		alternate: false
+		bullet: {
+			type: BasicBulletType
+			damage: 50
+			speed: 5
+			lifetime: 60
+			sprite: saphatax-soundwave
+		}
+	}
+]

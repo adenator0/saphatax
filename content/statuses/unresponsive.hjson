@@ -1,0 +1,12 @@
+localizedName: Unresponsive
+speedMultiplier: 0
+disarm: true
+buildSpeedMultiplier: 0
+dragMultiplier: 100
+healthMultiplier: 100
+effect: {
+	type: ParticleEffect
+	lifetime: 100
+	colorTo: 808080ff
+	region: "shape-3"
+}
