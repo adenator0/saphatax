@@ -7,7 +7,7 @@ shootType: {
 	type: ContinuousLaserBulletType
 	damage: 1.7976931348623157e+308
 	length: 8000
-	shake: 20
+	shake: 200
 	colors: [ea8878ff, ff9c5aff, ffd37fff, 84f491ff, 8aa3f4ff, a387eaff]
 	tscales: [1.0, 0.8, 0.6, 0.5, 0.4, 0.3]
 	strokes: [2.0, 1.6, 1.2, 0.9, 0.7, 0.6]
@@ -22,7 +22,7 @@ shootType: {
 
 reloadTime: 650
 shootDuration: 550
-recoilAmount: 5
+recoilAmount: 10
 range: 1000
 rotateSpeed: 10
 shootSound: laserblast

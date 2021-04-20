@@ -1,14 +1,12 @@
 # Saphatax
 Mindustry V6 mod that includes various types of new buildings, units, and other things. Some ideas are by friends, some by me.
 
-warning: also includes some crazy powerful sandbox-only stuff, such as Wrath of Everything
+Warning: also includes some crazy powerful sandbox-only stuff, such as Wrath of Everything.
 
 # Other Info
 The phaser turret is actually a remake from an old, abandoned mod of mine.
 
-I somehow cannot get motion generator to be able to be built.
-
-**oh god please help i cant learn alpha bleeding**
+I can't learn alpha bleeding so you are stuck with the ugly super-thin outlines nobody wants. Unless you disable linear filtering.
 
 # Samples of what to expect
 * Turrets
@@ -20,6 +18,6 @@ I somehow cannot get motion generator to be able to be built.
 	* Ohnoium! (yes it's real now)
 * Units
 	* Flying crawlers!
-	* Elite units!
+	* Horizon but sapping!
 	* What
 	* Sound waves?

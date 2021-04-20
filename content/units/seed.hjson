@@ -9,7 +9,7 @@ health: 85
 speed: 2.4
 accel: 0.1
 drag: 0.025
-range: 20
+range: 50
 engineOffset: 5.4
 fallSpeed: 1
 
@@ -24,9 +24,9 @@ weapons: [
 			killShooter: true
 			instantDisappear: true
 			damage: 25
-			radius: 35
+			radius: 65
 			splashDamage: 25
-			splashDamageRadius: 35
+			splashDamageRadius: 65
 			knockback: 4
 			status: sapped
 			despawnEffect: {
@@ -34,7 +34,7 @@ weapons: [
 				colorFrom: bf92f9ff
 				colorTo: bf92f9ff
 				sizeFrom: 0
-				sizeTo: 35
+				sizeTo: 65
 				lifetime: 25
 			}
 			hitEffect: {
@@ -42,7 +42,7 @@ weapons: [
 				colorFrom: bf92f9ff
 				colorTo: bf92f9ff
 				sizeFrom: 0
-				sizeTo: 35
+				sizeTo: 65
 				lifetime: 25
 			}
 		}
