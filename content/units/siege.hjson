@@ -1,0 +1,38 @@
+type: naval
+localizedName: Siege
+description: Fires a medium-range piercing bolt that deals more damage to buildings than units.
+details: Siege T1
+
+flying: false
+speed: 1.2
+drag: 0.12
+accel: 0.4
+hitSize: 10
+rotateSpeed: 2.5
+health: 260
+trailLength: 20
+armor: 2
+
+weapons: [
+	{
+		name: siege-railcannon
+		x: 6
+		y: 1
+		recoil: 2
+		reload: 60
+		cooldownTime: 45
+		shake: 3
+		rotate: true
+		shootSound: railgun
+		bullet: {
+			type: LaserBulletType
+			damage: 25
+			length: 250
+			width: 10
+			colors: [ffd2ae, e58956ff]
+			buildingDamageMultiplier: 10
+		}
+	}
+]
+
+research: risso

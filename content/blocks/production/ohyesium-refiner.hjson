@@ -1,0 +1,48 @@
+type: GenericSmelter
+localizedName: "[green]Ohyes[]ium Refinery"
+description: "Refines [red]ohno[]ium to be way stronger than its regular form. Very costly and risky."
+
+requirements: [
+	titanium/2000
+	copper/3000
+	lead/500
+	silicon/600
+	thorium/100
+	depleted-ohnoium/20
+]
+
+hasItems: true
+
+itemCapacity: 35
+consumes: {
+	items: {
+		items: [
+			uranium/30
+			ohyesium/5
+		]
+		optional: false
+		booster: false
+	}
+	power: 60
+}
+
+outputItem: refined-ohyesium/5
+
+craftEffect: explosion
+craftTime: 120
+
+size: 3
+health: 1170
+
+category: crafting
+research: {
+	parent: glitch-inverter
+	research: [
+		titanium/50000
+		copper/65000
+		lead/18600
+		silicon/16400
+		thorium/10000
+		depleted-ohnoium/7500
+	]
+}

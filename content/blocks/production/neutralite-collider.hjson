@@ -1,0 +1,58 @@
+type: LiquidConverter
+localizedName: Neutralite Collider
+description: "Collides [red]ohno[]ium and [green]ohyes[]ium, nullifiying most of the stats to create liquid neutralite."
+
+requirements: [
+	lead/1750
+	silicon/2000
+	depleted-ohnoium/35
+]
+
+hasItems: true
+
+itemCapacity: 35
+consumes: {
+	items: {
+		items: [
+			ohnoium/5
+			ohyesium/5
+		]
+		optional: false
+		booster: false
+	}
+	liquid: {
+		liquid: cryofluid
+		amount: 5
+	}
+	power: 100
+}
+
+outputsLiquid: true
+outputLiquid: neutral-liquid/0.5
+
+craftEffect: {
+	type: MultiEffect
+	effects: [
+		explosion
+		launch
+		impactShockwave
+		blockExplosion
+	]
+}
+updateEffect: steam
+craftTime: 150
+drawer: drawMixer
+
+size: 4
+health: 2480
+
+category: crafting
+research: {
+	parent: glitch-inverter
+	requirements: [
+		copper/85000
+		lead/73500
+		silicon/84250
+		depleted-ohnoium/1320
+	]
+}

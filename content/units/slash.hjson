@@ -1,0 +1,39 @@
+type: mech
+localizedName: Slash
+description: Walks up to enemy units and attacks with its blades once the enemy is close enough.
+details: Slash T1
+
+flying: false
+speed: 0.6
+health: 220
+hitSize: 8
+range: 22
+
+weapons: [
+	{
+		name: slash-sword
+		reload: 25
+		recoil: -2
+		x: 5
+		y: 1.8
+		shootY: 6
+		top: false
+		continuous: true
+		shootSound: pew
+		bullet: {
+			type: LaserBulletType
+			damage: 40
+			pierce: true
+			length: 10
+			width: 10
+			sideLength: 5
+			colors: [ecececff, cccedbff]
+			shootEffect: none
+			smokeEffect: none
+			despawnEffect: none
+			laserEffect: none
+		}
+	}
+]
+
+research: dagger

@@ -1,0 +1,42 @@
+type: flying
+localizedName: Blossom
+description: Fires a focused beam of energy that saps. Does not target air units automatically, but can hit them. Constructs crawler units.
+details: Seed T3
+
+flying: true
+hitSize: 14
+health: 850
+accel: 0.14
+drag: 0.03
+targetAir: false
+armor: 4
+engineOffset: 7.2
+range: 140
+
+abilities: [
+	{
+		type: UnitSpawnAbility
+		unit: crawler
+		spawnTime: 1200
+		spawnX: 0
+		spawnY: -4
+	}
+]
+
+weapons: [
+	{
+		x: 0
+		y: 4
+		reload: 100
+		bullet: {
+			type: LaserBulletType
+			damage: 115
+			colors: [bf92f9ff, 6d56bfff]
+			length: 120
+			sideLength: 10
+			status: sapped
+		}
+	}
+]
+
+research: spore

@@ -1,6 +1,7 @@
 type: flying
 localizedName: Stereo
 description: Fires two sound waves at enemies.
+details: Stereo T1
 
 flying: true
 speed: 3.2
@@ -19,7 +20,7 @@ weapons: [
 		alternate: false
 		bullet: {
 			type: BasicBulletType
-			damage: 50
+			damage: 14
 			speed: 5
 			lifetime: 60
 			sprite: saphatax-soundwave

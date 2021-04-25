@@ -1,0 +1,40 @@
+type: GenericCrafter
+localizedName: Zero Chamber
+description: Consumes titanium to drop the temperature of liquid neutralite to the point where it solidizes.
+
+requirements: [
+	lead/1960
+	silicon/2120
+	depleted-ohnoium/45
+]
+
+hasItems: true
+
+itemCapacity: 35
+consumes: {
+	items: {
+		items: [
+			titanium/10
+		]
+		optional: false
+		booster: false
+	}
+	liquid: {
+		liquid: neutral-liquid
+		amount: 2
+	}
+	power: 100
+}
+
+outputItem: neutralite/4
+
+craftEffect: formsmoke
+craftTime: 150
+
+size: 4
+health: 2560
+
+category: crafting
+research: {
+	parent: neutralite-collider
+}

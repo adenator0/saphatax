@@ -10,7 +10,7 @@ requirements: [
 ammoTypes: {
 	lead: {
 		type: BasicBulletType
-		damage: 35
+		damage: 17
 		speed: 4.5
 		width: 7
 		height: 14

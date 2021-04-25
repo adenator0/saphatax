@@ -1,0 +1,62 @@
+type: ItemTurret
+localizedName: Launcher
+description: Launches accelerating missiles at nearby enemies.
+
+requirements: [
+	copper/50
+	silicon/25
+]
+
+ammoTypes: {
+	coal: {
+		type: MissileBulletType
+		damage: 8
+		speed: 0.1
+		drag: -0.1
+		ammoMultiplier: 2
+		homingPower: 0.08
+	}
+	pyratite: {
+		type: MissileBulletType
+		damage: 16
+		speed: 0.1
+		drag: -0.1
+		ammoMultiplier: 3
+		homingPower: 0.08
+		makeFire: true
+		frontColor: f8ad42ff
+		backColor: f68021ff
+	}
+	blast-compound: {
+		type: MissileBulletType
+		damage: 16
+		speed: 0.1
+		drag: -0.1
+		ammoMultiplier: 4
+		homingPower: 0.08
+		status: blasted
+		splashDamage: 16
+		splashDamageRadius: 25
+		hitEffect: blastExplosion
+		despawnEffect: blastExplosion
+	}
+}
+
+range: 140
+reloadTime: 40
+recoilAmount: 3
+alternate: true
+spread: 4
+shots: 2
+
+size: 1
+health: 300
+
+category: turret
+research: {
+	parent: scatter
+	requirements: [
+		copper/1100
+		silicon/650
+	]
+}

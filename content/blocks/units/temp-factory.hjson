@@ -1,0 +1,52 @@
+type: UnitFactory
+localizedName: Temporary Factory
+description: Temporary factory to make Saphatax units.
+
+plans: [
+	{
+		unit: stereo
+		requirements: [ ]
+		time: 900
+	}
+	{
+		unit: siege
+		requirements: [ ]
+		time: 900
+	}
+	{
+		unit: slash
+		requirements: [ ]
+		time: 900
+	}
+	{
+		unit: spread
+		requirements: [ ]
+		time: 900
+	}
+	{
+		unit: seed
+		requirements: [ ]
+		time: 900
+	}
+	{
+		unit: spore
+		requirements: [ ]
+		time: 900
+	}
+	{
+		unit: blossom
+		requirements: [ ]
+		time: 900
+	}
+]
+
+consumes: {
+	power: 0.0166666667
+}
+
+size: 3
+health: 780
+itemCapacity: 30
+
+category: units
+buildVisibility: sandboxOnly

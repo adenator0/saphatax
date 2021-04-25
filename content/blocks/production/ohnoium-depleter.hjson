@@ -1,6 +1,6 @@
 type: GenericCrafter
-localizedName: Ohnoium Depleter
-description: Blasts batches of ohnoium with high amounts of cryofluid to deplete it of its insane power.
+localizedName: "[red]Ohno[]ium Depleter"
+description: "Blasts batches of [red]ohno[]ium with high amounts of cryofluid to deplete it of its insane power."
 
 requirements: [
 	copper/10000

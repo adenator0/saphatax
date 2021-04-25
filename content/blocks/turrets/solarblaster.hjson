@@ -1,0 +1,30 @@
+type: TractorBeamTurret
+localizedName: Solarblaster
+description: Fires relatively weak but constant rays of solar power at nearby enemies. Does not require any power at all.
+
+requirements: [
+	lead/45
+	silicon/70
+]
+
+damage: 1
+force: 0.5
+laserColor: ffd37fff
+
+range: 230
+shootSound: none
+rotateSpeed: 5
+targetGround: true
+
+size: 3
+health: 1150
+
+category: turret
+research: {
+	parent: salvo
+	research: [
+		copper/1500
+		lead/1300
+		silicon/1000
+	]
+}

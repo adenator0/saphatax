@@ -1,0 +1,39 @@
+type: mech
+localizedName: Spread
+description: Fires five spread-out bullets at enemy units. Stronger when the bullets are closer together.
+details: Spread T1
+
+flying: false
+speed: 0.5
+hitSize: 9
+health: 220
+armor: 2
+range: 75
+
+weapons: [
+	{
+		name: spread-shotgun
+		reload: 35
+		x: 4
+		y: 2
+		top: false
+		ejectEffect: casing1
+		shootSound: bang
+		shots: 5
+		inaccuracy: 15
+		bullet: {
+			type: BasicBulletType
+			damage: 3
+			speed: 2.5
+			width: 7
+			height: 9
+			lifetime: 30
+			shootEffect: shootSmall
+			smokeEffect: shootSmallSmoke
+			ammoMultiplier: 2
+			recoil: 0.4
+		}
+	}
+]
+
+research: dagger

@@ -1,0 +1,7 @@
+type: OreBlock
+itemDrop: uranium
+playerUnmineable: true
+oreDefault: true
+variants: 3
+oreScale: 19.7
+oreThreshold: 0.916

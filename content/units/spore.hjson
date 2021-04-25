@@ -1,10 +1,11 @@
 type: flying
 localizedName: Spore
 description: Flies up to enemy units and buildings, dropping sapping bombs on them.
+details: Seed T2
 
 flying: true
 hitSize: 11
-health: 295
+health: 450
 accel: 0.14
 drag: 0.03
 targetAir: false

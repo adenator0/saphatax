@@ -13,9 +13,12 @@ I can't learn alpha bleeding so you are stuck with the ugly super-thin outlines 
 	* Ice turrets that use titanium as ammo!
 	* A fire turret! Wow!
 	* Super strong turrets that can break reality!
+	* A weak parallax that doesn't need power!
 * Items
 	* Uranium!
 	* Ohnoium! (yes it's real now)
+	* Ohyesium! (the opposite of ohnoium!)
+	* Neutralite! (what)
 * Units
 	* Flying crawlers!
 	* Horizon but sapping!

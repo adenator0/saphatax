@@ -3,7 +3,7 @@ localizedName: Motion Generator
 description: Generates power from motion of water inside of it. Requires combustible materials to move the water around.
 details: Steam generator but more useful.
 
-requires: [
+requirements: [
 	copper/115
 	silicon/65
 	metaglass/15
@@ -14,7 +14,7 @@ itemCapacity: 20
 consumes: {
 	liquid: {
 		liquid: water
-		amount: 1
+		amount: 0.8
 	}
 }
 

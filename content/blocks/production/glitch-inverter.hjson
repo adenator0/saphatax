@@ -1,0 +1,95 @@
+type: GenericCrafter
+localizedName: Glitch Inverter
+description: "Uses the powerful electric charge of surge alloy to flip the power of [red]ohno[]ium. Very costly"
+
+requirements: [
+	copper/1000
+	lead/1000
+	metaglass/1000
+	graphite/1000
+	titanium/1000
+	thorium/1000
+	scrap/1000
+	silicon/1000
+	plastanium/1000
+	phase-fabric/1000
+	surge-alloy/1000
+	ohnoium/50
+]
+
+hasItems: true
+
+itemCapacity: 25
+consumes: {
+	items: {
+		items: [
+			ohnoium/3
+			surge-alloy/3
+		]
+		optional: false
+		booster: false
+	}
+	power: 45
+}
+
+outputItem: ohyesium/3
+
+craftEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: WaveEffect
+			lifetime: 25
+			colorFrom: ea8878ff
+			colorTo: ea8878ff
+			sizeFrom: 0
+			sizeTo: 50
+			strokeFrom: 5
+		}
+		{
+			type: ParticleEffect
+			lifetime: 25
+			length: -30
+			baseLength: 30
+			particles: 50
+			sizeFrom: 0
+			sizeTo: 5
+			colorFrom: 84f491ff
+			colorTo: ffffff00
+		}
+	]
+}
+updateEffect: {
+	type: ParticleEffect
+	lifetime: 25
+	length: -15
+	baseLength: 15
+	particles: 25
+	sizeFrom: 0
+	sizeTo: 5
+	colorFrom: f3e979
+	colorTo: ffffff00
+}
+drawer: drawWeave
+
+size: 3
+health: 1000
+
+category: crafting
+research: {
+	parent: reality-glitcher
+	requirements: [
+		copper/50000
+		lead/50000
+		metaglass/50000
+		graphite/50000
+		titanium/50000
+		thorium/50000
+		scrap/50000
+		silicon/50000
+		plastanium/50000
+		phase-fabric/50000
+		surge-alloy/50000
+		ohnoium/780
+	]
+}

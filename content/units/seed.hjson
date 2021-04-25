@@ -1,11 +1,11 @@
 type: flying
 localizedName: Seed
 description: Flies up to enemy units and buildings, exploding when close enough.
-details: Finally, more use for spore pods.
+details: Seed T1
 
 flying: true
 hitSize: 10
-health: 85
+health: 200
 speed: 2.4
 accel: 0.1
 drag: 0.025

@@ -1,0 +1,65 @@
+type: ItemTurret
+localizedName: Gammacaster
+description: Charges and fires a ray at nearby enemies. Deals less damage than meltdown.
+
+requirements: [
+	copper/300
+	uranium/100
+]
+
+ammoTypes: {
+	uranium: {
+		type: LaserBulletType
+		damage: 35
+		colors: [84f491ff, 73d188ff, 62ae7fff]
+		length: 175
+		width: 24
+	}
+}
+chargeTime: 20
+chargeBeginEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: ParticleEffect
+			lifetime: 20
+			length: -30
+			baseLength: 30
+			particles: 50
+			sizeFrom: 0
+			sizeTo: 3
+			colorFrom: 84f491ff
+		}
+		{
+			type: WaveEffect
+			lifetime: 20
+			sizeFrom: 30
+			sizeTo: 0
+			strokeFrom: 5
+			strokeTo: 0
+			colorFrom: 84f49125
+		}
+	]
+}
+
+shootSound: laser
+loopSound: beam
+loopSoundVolume: 1.5
+recoilAmount: 3
+reloadTime: 200
+shootEffect: shootBigSmoke2
+cooldown: 0.01
+range: 175
+
+size: 2
+health: 840
+
+category: turret
+research: {
+	parent: spectre
+	requirements: [
+		copper/5600
+		uranium/1200
+		lead/4800
+	]
+}
