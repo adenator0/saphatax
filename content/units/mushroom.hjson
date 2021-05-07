@@ -1,0 +1,124 @@
+type: flying
+localizedName: Mushroom
+description: Fires a large artillery projectile that explodes into sapping gas bombs. Constructs crawler units, atrax units, and seed units.
+details: Seed T4
+
+flying: true
+hitSize: 42
+health: 7500
+armor: 8
+accel: 0.16
+drag: 0.05
+engineSize: 7.5
+engineOffset: 16
+range: 320
+
+abilities: [
+	{
+		type: UnitSpawnAbility
+		unit: crawler
+		spawnTime: 800
+		spawnX: 14
+		spawnY: 2
+	}
+	{
+		type: UnitSpawnAbility
+		unit: crawler
+		spawnTime: 800
+		spawnX: -14
+		spawnY: 2
+	}
+	{
+		type: UnitSpawnAbility
+		unit: atrax
+		spawnTime: 1200
+		spawnX: 0
+		spawnY: 2
+	}
+	{
+		type: UnitSpawnAbility
+		unit: seed
+		spawnTime: 1050
+		spawnX: 0
+		spawnY: -12
+	}
+]
+
+weapons: [
+	{
+		name: mushroom-cannon
+		x: 0
+		y: 20
+		rotate: true
+		mirror: false
+		rotateSpeed: 2
+		shootY: 24
+		reload: 110
+		shake: 10
+		recoil: 5
+		shootSound: artillery
+		ejectEffect: none
+		bullet: {
+			type: ArtilleryBulletType
+			damage: 45
+			speed: 3
+			lifetime: 80
+			hitEffect: sapExplosion
+			despawnEffect: sapExplosion
+			width: 25
+			height: 25
+			collidesTiles: true
+			collidesAir: true
+			collides: true
+			lightning: 5
+			lightningLength: 20
+			lightningColor: bf92f9ff
+			frontColor: bf92f9ff
+			backColor: 6d56bfff
+			smokeEffect: shootBigSmoke2
+			hitShake: 5
+			status: sapped
+			fragBullets: 6
+			fragLifeMin: 0.3
+			fragBullet: {
+				type: BasicBulletType
+				damage: 30
+				speed: 2
+				lifetime: 80
+				width: 20
+				height: 20
+				hitEffect: sapExplosion
+				despawnEffect: sapExplosion
+				frontColor: bf92f9ff
+				backColor: 6d56bfff
+				hitShake: 2
+				status: sapped
+				fragBullets: 1
+				fragBullet: {
+					type: BasicBulletType
+					damage: 5
+					speed: 0.1
+					lifetime: 180
+					width: 25
+					height: 25
+					hitEffect: none
+					despawnEffect: none
+					pierce: true
+					pierceBuilding: true
+					frontColor: 00000000
+					backColor: 00000000
+					keepVelocity: false
+					status: sapped
+					trailEffect: {
+						type: ParticleEffect
+						colorFrom: 665c9fff
+						colorTo: 665c9f00
+						sizeFrom: 0
+						sizeTo: 20
+					}
+					trailChance: 0.2
+				}
+			}
+		}
+	}
+]

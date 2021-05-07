@@ -7,7 +7,7 @@ requirements: [
 	silicon/70
 ]
 
-damage: 1
+damage: 3
 force: 0.5
 laserColor: ffd37fff
 

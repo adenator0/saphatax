@@ -1,0 +1,48 @@
+type: legs
+localizedName: Consumer
+description: Bites into enemy units and buildings, stealing health from them. Can also pick up 1x1 structures.
+details: Biter T2
+
+flying: false
+hovering: true
+speed: 0.7
+hitSize: 10
+health: 520
+armor: 3
+range: 75
+payloadCapacity: 64
+
+legCount: 3
+legLength: 11
+legTrns: 0.6
+legMoveSpace: 0.6
+
+hovering: true
+allowLegStep: true
+visualElevation: 0.4
+groundLayer: 75
+
+weapons: [
+	{
+		reload: 45
+		shots: 2
+		shotDelay: 10
+		shootSound: sap
+		x: 0
+		y: 3
+		bullet: {
+			type: SapBulletType
+			sapStrength: 0.6
+			length: 75
+			damage: 19
+			shootEffect: shootSmall
+			color: ff8080ff
+			hitColor: ff8080ff
+			despawnEffect: none
+			width: 0.35
+			lifetime: 25
+			knockback: -0.75
+			status: none
+		}
+	}
+]

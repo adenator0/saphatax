@@ -1,0 +1,34 @@
+type: mech
+localizedName: Biter
+description: Bites into enemy units and buildings, stealing health from them.
+details: Biter T1
+
+flying: false
+speed: 0.8
+hitSize: 8
+health: 150
+armor: 1
+range: 45
+
+weapons: [
+	{
+		reload: 25
+		shootSound: sap
+		x: 0
+		y: 2
+		bullet: {
+			type: SapBulletType
+			sapStrength: 0.6
+			length: 45
+			damage: 14
+			shootEffect: shootSmall
+			color: ff8080ff
+			hitColor: ff8080ff
+			despawnEffect: none
+			width: 0.25
+			lifetime: 15
+			knockback: -0.5
+			status: none
+		}
+	}
+]

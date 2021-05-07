@@ -1,0 +1,60 @@
+type: mech
+localizedName: Remote
+description: Fires dual laser bolts at nearby enemies. Can command up to 4 more units.
+
+canBoost: true
+boostMultiplier: 1.5
+speed: 0.6
+hitSize: 10
+health: 140
+buildSpeed: 0.7
+armor: 1
+commandLimit: 12
+
+weapons: [
+	{
+		name: remote-cannon
+		top: false
+		shootY: 2
+		reload: 24
+		x: 5.5
+		y: 1
+		alternate: false
+		recoil: 2
+		shots: 2
+		shotDelay: 10
+		shootSound: lasershoot
+		bullet: {
+			type: LaserBoltBulletType
+			damage: 5
+			speed: 5.2
+			lifetime: 32
+			frontColor: ffffffff
+			backColor: 8aa3f4ff
+			hitEffect: {
+				type: WaveEffect
+				colorFrom: 8aa3f4ff
+				colorTo: 8aa3f4ff
+				sizeFrom: 0
+				sizeTo: 5
+				lifetime: 5
+			}
+			despawnEffect: {
+				type: WaveEffect
+				colorFrom: 8aa3f4ff
+				colorTo: 8aa3f4ff
+				sizeFrom: 0
+				sizeTo: 5
+				lifetime: 5
+			}
+			shootEffect: {
+				type: WaveEffect
+				colorFrom: 8aa3f4ff
+				colorTo: 8aa3f4ff
+				sizeFrom: 0
+				sizeTo: 10
+				lifetime: 10
+			}
+		}
+	}
+]

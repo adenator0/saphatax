@@ -1,0 +1,22 @@
+localizedName: Zero Point Hypercoolant
+description: The perfect coolant. Very powerful.
+
+color: ffffffff
+flammability: 0
+temperature: 0
+heatCapacity: 5
+explosiveness: 0.2
+viscosity: 0.3
+effect: {
+	name: hyperfreezing
+	localizedName: Hyperfreezing
+	speedMultiplier: 0.3
+	damage: 0.25
+	effect: {
+		type: MultiEffect
+		effects: [
+			freezing
+			wet
+		]
+	}
+}

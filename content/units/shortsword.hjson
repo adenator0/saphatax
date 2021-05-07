@@ -1,0 +1,39 @@
+type: mech
+localizedName: Shortsword
+description: Defends the Talarus core from enemies. Builds structures. Has a dash attack instead of shooting regularly.
+
+canBoost: true
+boostMultiplier: 1.6
+speed: 0.7
+hitSize: 12
+health: 260
+buildSpeed: 1.2
+commandLimit: 5
+itemCapacity: 90
+drag: 0.15
+
+weapons: [
+	{
+		reload: 30
+		x: 0
+		y: 0
+		shootY: 0
+		mirror: false
+		shootSound: flame
+		bullet: {
+			type: BasicBulletType
+			damage: 0
+			speed: 0.1
+			instantDisappear: true
+			keepVelocity: false
+			splashDamage: 11
+			splashDamageRadius: 40
+			despawnEffect: instTrail
+			hitEffect: shockwave
+			smokeEffect: none
+			shootEffect: none
+			recoil: -8
+			buildingDamageMultiplier: 0.01
+		}
+	}
+]

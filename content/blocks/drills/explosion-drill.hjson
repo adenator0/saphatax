@@ -1,0 +1,47 @@
+type: Drill
+localizedName: Explosion Drill
+description: Drill that explodes chunks of ore from the ground. Requires blast compound to fuel.
+
+requirements: [
+	copper/80
+	titanium/60
+	thorium/80
+	silicon/100
+	uranium/180
+]
+
+tier: 6
+drillTime: 260
+rotateSpeed: 6
+itemCapacity: 20
+
+hasPower: true
+consumes: {
+	power: 15
+}
+
+drawRim: true
+drillEffect: {
+	type: MultiEffect
+	effects: [
+		mineHuge
+		explosion
+	]
+}
+updateEffect: pulverizeRed
+updateEffectChance: 0.03
+
+size: 5
+health: 1040
+
+category: production
+research: {
+	parent: blast-drill
+	requirements: [
+		copper/12600
+		titanium/9520
+		thorium/11200
+		silicon/12600
+		uranium/1200
+	]
+}

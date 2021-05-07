@@ -3,15 +3,15 @@ description: Neutralite that has been heated to temperatures high enough to liqu
 
 color: 989aa4ff
 flammability: 0
-temeperature: 90.01
+temperature: 90.01
 heatCapacity: 0.5
 viscosity: 0.01
 explosiveness: 0.5
-status: {
+effect: {
 	name: neutralite-burn
 	localizedName: Neutralite Burn
-	speedMultiplier: 0.1
-	reloadMultiplier: 0.1
+	speedMultiplier: 0.5
+	reloadMultiplier: 0.4
 	damage: 1.66666667
 	effect: burning
 }

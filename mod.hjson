@@ -2,7 +2,7 @@ name: saphatax
 displayName: Saphatax
 author: aden8r
 description: A mod that adds brand new and unique blocks, items, and units. Also adds remakes of some things from an abandoned mod of mine.
-version: 0.1.3
+version: 0.2.0
 minGameVersion: 126.3
 dependencies: [ ]
 hidden: false

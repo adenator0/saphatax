@@ -6,14 +6,15 @@ requirements: [
 	copper/125
 	lead/65
 	titanium/45
+	metaglass/20
 ]
 
 ammoTypes: {
 	water: {
 		type: BasicBulletType
-		damage: 43
+		damage: 33
 		speed: 4
-		lifetime: 80
+		lifetime: 48
 		width: 8
 		height: 18
 		shrinkY: 0
@@ -25,9 +26,9 @@ ammoTypes: {
 	}
 	cryofluid: {
 		type: BasicBulletType
-		damage: 43
+		damage: 33
 		speed: 5
-		lifetime: 64
+		lifetime: 33
 		width: 8
 		height: 18
 		shrinkY: 0
@@ -56,7 +57,7 @@ ammoTypes: {
 
 extinguish: false
 reloadTime: 60
-range: 300
+range: 168
 rotateSpeed: 5
 maxAmmo: 5
 
@@ -70,5 +71,6 @@ research: {
 		copper/1200
 		lead/1000
 		titanium/725
+		metaglass/650
 	]
 }

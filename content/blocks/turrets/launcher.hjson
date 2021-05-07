@@ -24,6 +24,7 @@ ammoTypes: {
 		ammoMultiplier: 3
 		homingPower: 0.08
 		makeFire: true
+		status: burning
 		frontColor: f8ad42ff
 		backColor: f68021ff
 	}

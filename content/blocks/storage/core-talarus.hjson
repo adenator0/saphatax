@@ -1,0 +1,24 @@
+type: CoreBlock
+localizedName: "Core: Talarus"
+description: Core of the base. Above extremely well armored. Stores even more massive amounts of resources.
+
+requirements: [
+	copper/12000
+	lead/12000
+	silicon/8000
+	thorium/6000
+	uranium/2000
+]
+
+unitType: shortsword
+itemCapacity: 20000
+unitCapModifier: 48
+
+size: 6
+health: 9500
+
+category: effect
+research: {
+	parent: core-nucleus
+	researchCostMultiplier: 0.08
+}
