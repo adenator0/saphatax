@@ -1,0 +1,101 @@
+type: UnitFactory
+localizedName: Base Fabricator Pad
+description: Fabricates most T1 Saphatax units. Requires fabricator chips to function.
+
+requirements: [
+	copper/75
+	lead/160
+	silicon/100
+	chip-base/25
+]
+
+plans: [
+	{
+		unit: slash
+		requirements: [
+			silicon/10
+			lead/10
+			metaglass/20
+			chip-base/1
+		]
+		time: 1200
+	}
+	{
+		unit: spread
+		requirements: [
+			silicon/10
+			lead/15
+			scrap/10
+			chip-base/1
+		]
+		time: 1020
+	}
+	{
+		unit: seed
+		requirements: [
+			silicon/20
+			coal/20
+			lead/15
+			chip-base/1
+		]
+		time: 720
+	}
+	{
+		unit: biter
+		requirements: [
+			silicon/20
+			spore-pod/15
+			lead/10
+			chip-base/1
+		]
+		time: 1200
+	}
+	{
+		unit: spike
+		requirements: [
+			silicon/20
+			lead/20
+			titanium/10
+			chip-base/1
+		]
+		time: 1200
+	}
+	{
+		unit: siege
+		requirements: [
+			silicon/30
+			metaglass/45
+			chip-base/1
+		]
+		time: 2400
+	}
+	{
+		unit: stereo
+		requirements: [
+			silicon/15
+			lead/10
+			graphite/5
+			chip-base/1
+		]
+		time: 900
+	}
+	{
+		unit: remote
+		requirements: [
+			silicon/35
+			lead/25
+			titanium/30
+		]
+		time: 2700
+	}
+]
+
+consumes: {
+	power: 1.2
+}
+
+size: 3
+health: 780
+itemCapacity: 40
+
+category: units

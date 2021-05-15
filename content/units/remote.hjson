@@ -1,6 +1,7 @@
 type: mech
 localizedName: Remote
 description: Fires dual laser bolts at nearby enemies. Can command up to 4 more units.
+details: Remote T1
 
 canBoost: true
 boostMultiplier: 1.5

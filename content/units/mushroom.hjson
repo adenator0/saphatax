@@ -12,6 +12,7 @@ drag: 0.05
 engineSize: 7.5
 engineOffset: 16
 range: 320
+rotateSpeed: 1.5
 
 abilities: [
 	{
@@ -33,7 +34,7 @@ abilities: [
 		unit: atrax
 		spawnTime: 1200
 		spawnX: 0
-		spawnY: 2
+		spawnY: 16
 	}
 	{
 		type: UnitSpawnAbility
@@ -48,7 +49,7 @@ weapons: [
 	{
 		name: mushroom-cannon
 		x: 0
-		y: 20
+		y: 1
 		rotate: true
 		mirror: false
 		rotateSpeed: 2
@@ -60,7 +61,7 @@ weapons: [
 		ejectEffect: none
 		bullet: {
 			type: ArtilleryBulletType
-			damage: 45
+			damage: 35
 			speed: 3
 			lifetime: 80
 			hitEffect: sapExplosion
@@ -82,7 +83,7 @@ weapons: [
 			fragLifeMin: 0.3
 			fragBullet: {
 				type: BasicBulletType
-				damage: 30
+				damage: 15
 				speed: 2
 				lifetime: 80
 				width: 20

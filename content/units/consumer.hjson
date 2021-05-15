@@ -12,10 +12,10 @@ armor: 3
 range: 75
 payloadCapacity: 64
 
-legCount: 3
+legCount: 4
 legLength: 11
 legTrns: 0.6
-legMoveSpace: 0.6
+legMoveSpace: 1
 
 hovering: true
 allowLegStep: true

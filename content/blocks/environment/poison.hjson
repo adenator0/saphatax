@@ -1,0 +1,11 @@
+type: Floor
+localizedName: Poison
+variants: 1
+playerUnmineable: true
+speedMultiplier: 0.4
+cacheLayer: water
+drownTime: 7200
+isLiquid: true
+hasShadow: false
+expanded: true
+status: corroded

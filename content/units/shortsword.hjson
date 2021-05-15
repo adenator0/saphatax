@@ -12,6 +12,32 @@ commandLimit: 5
 itemCapacity: 90
 drag: 0.15
 
+abilities: [
+	{
+		//cosmetic effect
+		type: MoveLightningAbility
+		minSpeed: 0.8
+		maxSpeed: 5
+		damage: 0
+		chance: 1
+		length: 1
+		color: 00000000
+		shootSound: none
+		shootEffect: {
+			type: ParticleEffect
+			layer: 59
+			particles: 1
+			sizeFrom: 6
+			sizeTo: 6
+			length: 0.01
+			lifetime: 15
+			region: saphatax-shortsword-trail
+			colorFrom: ffffff80
+			colorTo: ffffff00
+		}
+	}
+]
+
 weapons: [
 	{
 		reload: 30
@@ -26,9 +52,9 @@ weapons: [
 			speed: 0.1
 			instantDisappear: true
 			keepVelocity: false
-			splashDamage: 11
+			splashDamage: 44
 			splashDamageRadius: 40
-			despawnEffect: instTrail
+			despawnEffect: explosion
 			hitEffect: shockwave
 			smokeEffect: none
 			shootEffect: none

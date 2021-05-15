@@ -1,0 +1,37 @@
+type: flying
+localizedName: Needle
+description: Dashes into flying enemy units. Also fires poison which can hit ground units or buildings.
+details: Spike T2
+
+flying: true
+hitSize: 9
+health: 480
+drag: 0.05
+accel: 0.18
+speed: 1.5
+range: 170
+engineOffset: 7.6
+
+weapons: [
+	{
+		name: needle-point
+		reload: 50
+		shootSound: sap
+		mirror: false
+		top: false
+		shots: 3
+		inaccuracy: 10
+		velocityRnd: 0.2
+		recoil: -1
+		x: 0
+		y: 9
+		bullet: {
+			type: LiquidBulletType
+			liquid: needle-poison
+			drag: 0.01
+			speed: 2
+			lifetime: 80
+			recoil: -1
+		}
+	}
+]

@@ -1,0 +1,20 @@
+type: ItemBridge
+localizedName: Launch Tower
+description: Transports items over terrain or buildings. Longer range than the regular bridge conveyor, but shorter range than the phase conveyor. Requires power. Faster than the bridge conveyor.
+
+requirements: [
+	lead/8
+	graphite/8
+	silicon/5
+	metaglass/3
+]
+
+range: 8
+speed: 114
+
+hasPower: true
+consumes: {
+	power: 0.15
+}
+
+category: distribution

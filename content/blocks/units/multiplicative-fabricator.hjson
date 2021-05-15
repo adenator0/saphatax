@@ -1,0 +1,35 @@
+type: Reconstructor
+localizedName: Multiplicative Fabricator Pad
+description: Upgrades most T2 Saphatax units to T3. Requires fabricator chips to function.
+
+requirements: [
+	lead/675
+	silicon/500
+	titanium/400
+	thorium/675
+	chip-multiplicative/25
+]
+
+constructTime: 1800
+
+upgrades: [
+	[spore, blossom]
+]
+
+consumes: {
+	items: {
+		items: [
+			silicon/150
+			titanium/100
+			metaglass/70
+			chip-multiplicative/1
+		]
+	}
+	power: 6
+}
+
+size: 5
+health: 1140
+itemCapacity: 100
+
+category: units

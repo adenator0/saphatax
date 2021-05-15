@@ -1,0 +1,36 @@
+type: Reconstructor
+localizedName: Additive Fabricator Pad
+description: Upgrades most T1 Saphatax units to T2. Requires fabricator chips to function.
+
+requirements: [
+	copper/225
+	lead/145
+	silicon/110
+	chip-additive/25
+]
+
+constructTime: 600
+
+upgrades: [
+	[seed, spore]
+	[spike, needle]
+	[biter, consumer]
+]
+
+consumes: {
+	items: {
+		items: [
+			silicon/50
+			graphite/30
+			titanium/15
+			chip-additive/1
+		]
+	}
+	power: 3
+}
+
+size: 3
+health: 780
+itemCapacity: 60
+
+category: units

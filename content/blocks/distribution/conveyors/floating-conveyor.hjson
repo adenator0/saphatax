@@ -1,0 +1,20 @@
+type: Conveyor
+localizedName: Floating Conveyor
+description: Transports items forward. Can only be placed on water.
+
+requirements: [
+	copper/2
+	metaglass/1
+]
+
+speed: 0.03
+displayedSpeed: 4.2
+buildCostMultiplier: 2
+placeableLiquid: true
+requiresWater: true
+
+ambientSound: hum
+
+health: 180
+
+category: distribution

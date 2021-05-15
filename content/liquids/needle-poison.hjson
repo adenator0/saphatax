@@ -1,0 +1,7 @@
+localizedName: Needle Poison
+description: Unobtainable liquid. Fired by Needle.
+
+color: 8a73c6ff
+lightColor: bf92f980
+heatCapacity: 0
+effect: corroded
